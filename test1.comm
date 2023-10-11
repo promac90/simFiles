@@ -23,7 +23,7 @@ fieldmat = AFFE_MATERIAU(
 load = AFFE_CHAR_MECA( 
     DDL_IMPO=_F(DX=0.0, DY=0.0, DZ=0.0, GROUP_MA=('s4' )), 
     MODELE=model, 
-    PRES_REP=_F(GROUP_MA=('s1'), PRES=-0.10000000000000003) 
+    PRES_REP=_F(GROUP_MA=('s1'), PRES=-1.0000000000000004) 
 )
 
 reslin = MECA_STATIQUE(
