@@ -23,7 +23,7 @@ fieldmat = AFFE_MATERIAU(
 load = AFFE_CHAR_MECA( 
     DDL_IMPO=_F(DX=0.0, DY=0.0, DZ=0.0, GROUP_MA=('s4' )), 
     MODELE=model, 
-    PRES_REP=_F(GROUP_MA=('s2'), PRES=-0.0010000000000000002) 
+    PRES_REP=_F(GROUP_MA=('s2'), PRES=-0.010000000000000002) 
 )
 
 reslin = MECA_STATIQUE(
@@ -33,7 +33,7 @@ reslin = MECA_STATIQUE(
      
     SOLVEUR=_F(
         METHODE='MUMPS',
-        RESI_RELA=1e-04
+        RESI_RELA=1e-09
     )
 )
 t2 = POST_RELEVE_T(
