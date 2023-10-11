@@ -1,0 +1,7 @@
+﻿argument for gmsh are:1. Standard output is:Info    : Reading '/home/promac90/Desktop/simScaleAPI/msh&geomFiles/upl.step'...
+Info    :  - Label 'Shapes/export' (3D)
+Info    : Done reading '/home/promac90/Desktop/simScaleAPI/msh&geomFiles/upl.step'
+ Standard error is:Error   : Unknown OpenCASCADE entity of dimension 3 with tag 1
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  Unknown OpenCASCADE entity of dimension 3 with tag 1
+  
