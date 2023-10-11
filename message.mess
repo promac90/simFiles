@@ -12,7 +12,7 @@
                  révision bc8cd7a4aae1 - branche 'v15.2_smeca'                  
                          Copyright EDF R&D 1991 - 2023                          
                                                                                 
-                    Exécution du : Wed Oct 11 16:09:35 2023                     
+                    Exécution du : Wed Oct 11 16:11:11 2023                     
                           Nom de la machine : pcLinux                           
                               Architecture : 64bit                              
                           Type de processeur : x86_64                           
@@ -126,8 +126,8 @@ starting the execution...
 
   Relecture des catalogues des éléments faite.
 
-  Fin de lecture (durée  0.036051  s.) 
-Statistics: user+syst:        0.02s (syst:        0.01s, elaps:        0.07s)
+  Fin de lecture (durée  0.035107  s.) 
+Statistics: user+syst:        0.03s (syst:        0.01s, elaps:        0.05s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt11
@@ -259,7 +259,7 @@ NOMBRE DE GROUPES DE MAILLES              74
 --------------------------------------------------------------------------------
 
 Result of command #0002 (LIRE_MAILLAGE): meshL ('<00000001>') of type <Mesh>
-Statistics: user+syst:        0.16s (syst:        0.01s, elaps:        0.23s)
+Statistics: user+syst:        0.17s (syst:        0.01s, elaps:        0.23s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt12
@@ -285,7 +285,7 @@ NOMBRE  DE GROUPES DE NOEUDS CREES :      1
                ------------------------------------------------------
 
 Result of command #0006 (DEFI_GROUP): mesh ('<00000001>') of type <Mesh>
-Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.02s)
+Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.01s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt17
@@ -303,7 +303,7 @@ MOT CLE FACTEUR "LINE_QUAD", OCCURRENCE    1
 
 ------------ MAILLAGE 00000002 - IMPRESSIONS NIVEAU  1 ------------
 
-ASTER 15.02.00 CONCEPT 00000002 CALCULE LE 11/10/2023 A 16:09:35 DE TYPE        
+ASTER 15.02.00 CONCEPT 00000002 CALCULE LE 11/10/2023 A 16:11:12 DE TYPE        
 MAILLAGE_SDASTER                                                                
 
 NOMBRE DE NOEUDS                        8684
@@ -394,7 +394,7 @@ NOMBRE DE GROUPES DE MAILLES              74
 --------------------------------------------------------------------------------
 
 Result of command #0007 (CREA_MAILLAGE): mesh ('<00000002>') of type <Mesh>
-Statistics: user+syst:        0.06s (syst:        0.00s, elaps:        0.07s)
+Statistics: user+syst:        0.06s (syst:        0.01s, elaps:        0.11s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt20
@@ -413,9 +413,9 @@ Sur les 7165 mailles du maillage 00000002, on a demandé l'affectation de 7165, 
  Modélisation     Formulation      Type maille  Élément fini     Nombre
                                    TRIA6        MECA_FACE6       2768
  3D                                TETRA10      MECA_TETRA10     4397
-#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.01      0.00      0.01
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.00      0.00      0.01
 Result of command #0008 (AFFE_MODELE): model ('<00000003>') of type <Model>
-Statistics: user+syst:        0.02s (syst:        0.00s, elaps:        0.03s)
+Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.02s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt25
@@ -427,7 +427,7 @@ mater = DEFI_MATERIAU(ELAS=_F(COEF_AMOR=1.0,
                       INFO=1)
 
 Result of command #0009 (DEFI_MATERIAU): mater ('<00000004>') of type <Material>
-Statistics: user+syst:        0.00s (syst:        0.01s, elaps:        0.00s)
+Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.01s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt27
@@ -496,7 +496,7 @@ fieldmat = AFFE_MATERIAU(AFFE=_F(GROUP_MA='v',
                                       NOM_VARC='TEMP'))
 
 Result of command #0010 (AFFE_MATERIAU): fieldmat ('<00000005>') of type <MaterialField>
-Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.01s)
+Statistics: user+syst:        0.00s (syst:        0.00s, elaps:        0.03s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt31
@@ -514,7 +514,7 @@ load = AFFE_CHAR_MECA(DDL_IMPO=_F(DX=0.0,
                       VERI_NORM='OUI')
 
 Result of command #0011 (AFFE_CHAR_MECA): load ('<00000006>') of type <GenericMechanicalLoad>
-Statistics: user+syst:        0.02s (syst:        0.00s, elaps:        0.03s)
+Statistics: user+syst:        0.03s (syst:        0.00s, elaps:        0.04s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt37
@@ -580,7 +580,7 @@ reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
    
 
   Destruction du concept '0000000e' suite à l'erreur précédente.
-Statistics: user+syst:        4.87s (syst:        0.30s, elaps:        4.97s)
+Statistics: user+syst:        4.79s (syst:        0.31s, elaps:        4.81s)
 ----------------------------------------------------------------------------------------------------
 
     <S> Une exception s'est produite précédemment.
@@ -693,10 +693,10 @@ load                     <class 'libaster.GenericMechanicalLoad'>
      - LIMITE LES ACCES DISQUE
      - AMELIORE LA VITESSE D'EXECUTION
   
- <I>       FIN D'EXECUTION LE : ME-11-OCTO-2023 16:09:40
+ <I>       FIN D'EXECUTION LE : ME-11-OCTO-2023 16:11:16
 Signature of pickled file   : b1f58a0b41503012b2eb5dc701a5ae3ed9e4117743d40ed24e5825da29bf3392
 Signature of info file      : 5c2175eedc37d946572f360093cf349f7774a7b3aeb34b94c4d78e718430192e
-Signature of Jeveux database: 6c29bbdb9c244dce7b2b8fbd87fcd853f76933f22b72bce625a095342fce926c
-EXECUTION_CODE_ASTER_EXIT_221194=1
+Signature of Jeveux database: a5b6f491e6446e39662248798e9a4e530e2f79429aaf3928a5fdd1aedd65aa6f
+EXECUTION_CODE_ASTER_EXIT_221289=1
 
  <I>_EXIT_CODE = 1
