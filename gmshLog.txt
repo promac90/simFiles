@@ -1,0 +1,114 @@
+﻿argument for gmsh are:1. Standard output is:Info    : Reading '/home/promac90/Desktop/simScaleAPI/msh&geomFiles/upl.step'...
+Info    :  - Label 'Shapes/retaining ring' (3D)
+Info    :  - Color (0.792157, 0.819608, 0.933333) (3D & Surfaces)
+Info    : Done reading '/home/promac90/Desktop/simScaleAPI/msh&geomFiles/upl.step'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Line)
+Info    : [ 10%] Meshing curve 2 (Circle)
+Info    : [ 10%] Meshing curve 3 (Line)
+Info    : [ 10%] Meshing curve 4 (Circle)
+Info    : [ 10%] Meshing curve 5 (Line)
+Info    : [ 20%] Meshing curve 6 (Line)
+Info    : [ 20%] Meshing curve 7 (Line)
+Info    : [ 20%] Meshing curve 8 (Circle)
+Info    : [ 20%] Meshing curve 9 (Line)
+Info    : [ 30%] Meshing curve 10 (Circle)
+Info    : [ 30%] Meshing curve 11 (Circle)
+Info    : [ 30%] Meshing curve 12 (Line)
+Info    : [ 30%] Meshing curve 13 (Circle)
+Info    : [ 40%] Meshing curve 14 (Line)
+Info    : [ 40%] Meshing curve 15 (Line)
+Info    : [ 40%] Meshing curve 16 (Line)
+Info    : [ 40%] Meshing curve 17 (Circle)
+Info    : [ 50%] Meshing curve 18 (Line)
+Info    : [ 50%] Meshing curve 19 (Circle)
+Info    : [ 50%] Meshing curve 20 (Circle)
+Info    : [ 50%] Meshing curve 21 (Line)
+Info    : [ 50%] Meshing curve 22 (Circle)
+Info    : [ 60%] Meshing curve 23 (Circle)
+Info    : [ 60%] Meshing curve 24 (Line)
+Info    : [ 60%] Meshing curve 25 (Circle)
+Info    : [ 60%] Meshing curve 26 (Line)
+Info    : [ 70%] Meshing curve 27 (Line)
+Info    : [ 70%] Meshing curve 28 (Line)
+Info    : [ 70%] Meshing curve 29 (Circle)
+Info    : [ 70%] Meshing curve 30 (Line)
+Info    : [ 80%] Meshing curve 31 (Circle)
+Info    : [ 80%] Meshing curve 32 (Circle)
+Info    : [ 80%] Meshing curve 33 (Line)
+Info    : [ 80%] Meshing curve 34 (Circle)
+Info    : [ 90%] Meshing curve 35 (Line)
+Info    : [ 90%] Meshing curve 36 (Line)
+Info    : [ 90%] Meshing curve 37 (Circle)
+Info    : [ 90%] Meshing curve 38 (Circle)
+Info    : [100%] Meshing curve 39 (Circle)
+Info    : [100%] Meshing curve 40 (Circle)
+Info    : [100%] Meshing curve 41 (BSpline)
+Info    : [100%] Meshing curve 42 (BSpline)
+Info    : Done meshing 1D (Wall 0.0502707s, CPU 0.049744s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Cylinder, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 3 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 4 (Cylinder, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 6 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 7 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 8 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 9 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 10 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 11 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 12 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 13 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 14 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 15 (Unknown, Frontal-Delaunay)
+Info    : [100%] Meshing surface 16 (Unknown, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.055783s, CPU 0.051981s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Tetrahedrizing 375 nodes...
+Info    : Done tetrahedrizing 383 nodes (Wall 0.00443011s, CPU 0.004236s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    : Done reconstructing mesh (Wall 0.0103787s, CPU 0.009359s)
+Info    : Found volume 1
+Info    : It. 0 - 0 nodes created - worst tet radius 1.57402 (nodes removed 0 0)
+Info    : 3D refinement terminated (386 nodes total):
+Info    :  - 0 Delaunay cavities modified for star shapeness
+Info    :  - 0 nodes could not be inserted
+Info    :  - 1010 tetrahedra created in 0.000893122 sec. (1130864 tets/s)
+Info    : Done meshing 3D (Wall 0.017761s, CPU 0.016705s)
+Info    : Optimizing mesh...
+Info    : Optimizing volume 1
+Info    : Optimization starts (volume = 167520) with worst = 0.103182 / average = 0.657575:
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :        10 elements
+Info    : 0.20 < quality < 0.30 :        24 elements
+Info    : 0.30 < quality < 0.40 :        50 elements
+Info    : 0.40 < quality < 0.50 :       104 elements
+Info    : 0.50 < quality < 0.60 :       156 elements
+Info    : 0.60 < quality < 0.70 :       204 elements
+Info    : 0.70 < quality < 0.80 :       241 elements
+Info    : 0.80 < quality < 0.90 :       148 elements
+Info    : 0.90 < quality < 1.00 :        73 elements
+Info    : 26 edge swaps, 0 node relocations (volume = 167520): worst = 0.149371 / average = 0.669505 (Wall 0.000727218s, CPU 0.000382s)
+Info    : 27 edge swaps, 0 node relocations (volume = 167520): worst = 0.149371 / average = 0.66948 (Wall 0.000892822s, CPU 0.000481s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         2 elements
+Info    : 0.20 < quality < 0.30 :         4 elements
+Info    : 0.30 < quality < 0.40 :        41 elements
+Info    : 0.40 < quality < 0.50 :       106 elements
+Info    : 0.50 < quality < 0.60 :       163 elements
+Info    : 0.60 < quality < 0.70 :       210 elements
+Info    : 0.70 < quality < 0.80 :       239 elements
+Info    : 0.80 < quality < 0.90 :       147 elements
+Info    : 0.90 < quality < 1.00 :        72 elements
+Info    : Done optimizing mesh (Wall 0.00190775s, CPU 0.001301s)
+Info    : 386 nodes 1952 elements
+Info    : Writing '/home/promac90/Desktop/simScaleAPI/asterFiles//upload.unv'...
+Info    : Done writing '/home/promac90/Desktop/simScaleAPI/asterFiles//upload.unv'
+ Standard error is:Warning : Boolean fragments skipped - too few arguments
+  
