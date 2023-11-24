@@ -12,7 +12,7 @@
                  révision bc8cd7a4aae1 - branche 'v15.2_smeca'                  
                          Copyright EDF R&D 1991 - 2023                          
                                                                                 
-                    Exécution du : Fri Nov 24 11:51:48 2023                     
+                    Exécution du : Fri Nov 24 11:56:37 2023                     
                           Nom de la machine : pcLinux                           
                               Architecture : 64bit                              
                           Type de processeur : x86_64                           
@@ -126,8 +126,8 @@ starting the execution...
 
   Relecture des catalogues des éléments faite.
 
-  Fin de lecture (durée  0.040430  s.) 
-Statistics: user+syst:        0.02s (syst:        0.04s, elaps:        0.06s)
+  Fin de lecture (durée  0.030644  s.) 
+Statistics: user+syst:        0.02s (syst:        0.03s, elaps:        0.04s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt11
@@ -230,7 +230,7 @@ NOMBRE DE GROUPES DE MAILLES              45
 --------------------------------------------------------------------------------
 
 Result of command #0002 (LIRE_MAILLAGE): meshL ('<00000001>') of type <Mesh>
-Statistics: user+syst:        0.12s (syst:        0.00s, elaps:        0.12s)
+Statistics: user+syst:        0.07s (syst:        0.00s, elaps:        0.08s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt12
@@ -256,7 +256,7 @@ NOMBRE  DE GROUPES DE NOEUDS CREES :      1
                ------------------------------------------------------
 
 Result of command #0006 (DEFI_GROUP): mesh ('<00000001>') of type <Mesh>
-Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.02s)
+Statistics: user+syst:        0.00s (syst:        0.00s, elaps:        0.00s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt17
@@ -274,7 +274,7 @@ MOT CLE FACTEUR "LINE_QUAD", OCCURRENCE    1
 
 ------------ MAILLAGE 00000002 - IMPRESSIONS NIVEAU  1 ------------
 
-ASTER 15.02.00 CONCEPT 00000002 CALCULE LE 24/11/2023 A 11:51:49 DE TYPE        
+ASTER 15.02.00 CONCEPT 00000002 CALCULE LE 24/11/2023 A 11:56:37 DE TYPE        
 MAILLAGE_SDASTER                                                                
 
 NOMBRE DE NOEUDS                        4111
@@ -336,7 +336,7 @@ NOMBRE DE GROUPES DE MAILLES              45
 --------------------------------------------------------------------------------
 
 Result of command #0007 (CREA_MAILLAGE): mesh ('<00000002>') of type <Mesh>
-Statistics: user+syst:        0.04s (syst:        0.00s, elaps:        0.04s)
+Statistics: user+syst:        0.03s (syst:        0.00s, elaps:        0.02s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt20
@@ -355,9 +355,9 @@ Sur les 3383 mailles du maillage 00000002, on a demandé l'affectation de 3383, 
  Modélisation     Formulation      Type maille  Élément fini     Nombre
                                    TRIA6        MECA_FACE6       1404
  3D                                TETRA10      MECA_TETRA10     1979
-#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.01      0.00      0.00
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.00      0.00      0.00
 Result of command #0008 (AFFE_MODELE): model ('<00000003>') of type <Model>
-Statistics: user+syst:        0.02s (syst:        0.00s, elaps:        0.01s)
+Statistics: user+syst:        0.00s (syst:        0.01s, elaps:        0.01s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt25
@@ -369,7 +369,7 @@ mater = DEFI_MATERIAU(ELAS=_F(COEF_AMOR=1.0,
                       INFO=1)
 
 Result of command #0009 (DEFI_MATERIAU): mater ('<00000004>') of type <Material>
-Statistics: user+syst:        0.00s (syst:        0.00s, elaps:        0.00s)
+Statistics: user+syst:        0.00s (syst:        0.00s, elaps:        0.01s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt27
@@ -438,7 +438,7 @@ fieldmat = AFFE_MATERIAU(AFFE=_F(GROUP_MA='v',
                                       NOM_VARC='TEMP'))
 
 Result of command #0010 (AFFE_MATERIAU): fieldmat ('<00000005>') of type <MaterialField>
-Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.01s)
+Statistics: user+syst:        0.01s (syst:        0.00s, elaps:        0.00s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt31
@@ -452,11 +452,11 @@ load = AFFE_CHAR_MECA(DDL_IMPO=_F(DX=0.0,
                       INFO=1,
                       MODELE=model,
                       PRES_REP=_F(GROUP_MA='s43',
-                                  PRES=-2.694724619165044),
+                                  PRES=-2.6273565036859177),
                       VERI_NORM='OUI')
 
 Result of command #0011 (AFFE_CHAR_MECA): load ('<00000006>') of type <GenericMechanicalLoad>
-Statistics: user+syst:        0.04s (syst:        0.00s, elaps:        0.05s)
+Statistics: user+syst:        0.02s (syst:        0.00s, elaps:        0.02s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt37
@@ -509,7 +509,7 @@ reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
    
 #2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.02      0.00      0.02
 Result of command #0012 (MECA_STATIQUE): '<0000000e>' of type <ElasticResult>
-Statistics: user+syst:        0.97s (syst:        0.19s, elaps:        0.93s)
+Statistics: user+syst:        0.97s (syst:        0.14s, elaps:        0.88s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt47
@@ -529,7 +529,7 @@ t2 = POST_RELEVE_T(ACTION=_F(CRITERE='RELATIF',
                    INFO=1)
 
 Result of command #0014 (POST_RELEVE_T): t2 ('<0000001b>') of type <Table>
-Statistics: user+syst:        0.02s (syst:        0.00s, elaps:        0.02s)
+Statistics: user+syst:        0.03s (syst:        0.00s, elaps:        0.03s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt57
@@ -543,7 +543,7 @@ reslin = CALC_CHAMP(CONTRAINTE='SIEF_ELNO',
                     RESULTAT=reslin,
                     reuse=reslin)
 
-#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.03      0.00      0.03
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.02      0.00      0.02
 Result of command #0015 (CALC_CHAMP): reslin ('<0000000e>') of type <ElasticResult>
 Statistics: user+syst:        0.04s (syst:        0.00s, elaps:        0.04s)
 ----------------------------------------------------------------------------------------------------
@@ -565,7 +565,7 @@ t = POST_RELEVE_T(ACTION=_F(CRITERE='RELATIF',
                   INFO=1)
 
 Result of command #0016 (POST_RELEVE_T): t ('<0000001c>') of type <Table>
-Statistics: user+syst:        0.39s (syst:        0.16s, elaps:        0.54s)
+Statistics: user+syst:        0.38s (syst:        0.17s, elaps:        0.55s)
 ----------------------------------------------------------------------------------------------------
 
 .. _stg1_txt130
@@ -700,33 +700,33 @@ result_str               <class 'str'>
      - LIMITE LES ACCES DISQUE
      - AMELIORE LA VITESSE D'EXECUTION
   
- <I>       FIN D'EXECUTION LE : VE-24-NOVE-2023 11:51:51
-Signature of pickled file   : 4cd5603e71df3ff645baad6773af7a66bedded628d2af6b4297a65baef7596e5
+ <I>       FIN D'EXECUTION LE : VE-24-NOVE-2023 11:56:39
+Signature of pickled file   : 3833c8fd37a8393195ff7e9a579a04b9dc53e2f788a06de7c97d9f687ae8391a
 Signature of info file      : d299afe783bc986ec9751fd1f1127a8da1c28e34383a3c9139501388a396163e
-Signature of Jeveux database: 24095423a1f5585305c9c78b9762d6e37a934584ef777b9266feb82a69bf911e
+Signature of Jeveux database: d926760d5dbf92633b5f680fa8f175b53cc77c68069fd36662693f825cdf5b6f
 
  ********************************************************************************
  * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
  ********************************************************************************
- * DEBUT                    :       0.02 :       0.04 :       0.06 :       0.06 *
- * LIRE_MAILLAGE            :       0.12 :       0.00 :       0.12 :       0.12 *
- * DEFI_GROUP               :       0.01 :       0.00 :       0.01 :       0.02 *
- * CREA_MAILLAGE            :       0.04 :       0.00 :       0.04 :       0.04 *
- * AFFE_MODELE              :       0.02 :       0.00 :       0.02 :       0.01 *
- * DEFI_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.00 *
- * AFFE_MATERIAU            :       0.01 :       0.00 :       0.01 :       0.01 *
- * AFFE_CHAR_MECA           :       0.04 :       0.00 :       0.04 :       0.05 *
- * MECA_STATIQUE            :       0.97 :       0.19 :       1.16 :       0.93 *
- * POST_RELEVE_T            :       0.02 :       0.00 :       0.02 :       0.02 *
+ * DEBUT                    :       0.02 :       0.03 :       0.05 :       0.04 *
+ * LIRE_MAILLAGE            :       0.07 :       0.00 :       0.07 :       0.08 *
+ * DEFI_GROUP               :       0.00 :       0.00 :       0.00 :       0.00 *
+ * CREA_MAILLAGE            :       0.03 :       0.00 :       0.03 :       0.02 *
+ * AFFE_MODELE              :       0.00 :       0.01 :       0.01 :       0.01 *
+ * DEFI_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.01 *
+ * AFFE_MATERIAU            :       0.01 :       0.00 :       0.01 :       0.00 *
+ * AFFE_CHAR_MECA           :       0.02 :       0.00 :       0.02 :       0.02 *
+ * MECA_STATIQUE            :       0.97 :       0.14 :       1.11 :       0.88 *
+ * POST_RELEVE_T            :       0.03 :       0.00 :       0.03 :       0.03 *
  * CALC_CHAMP               :       0.04 :       0.00 :       0.04 :       0.04 *
- * POST_RELEVE_T            :       0.39 :       0.16 :       0.55 :       0.54 *
- * FIN                      :       0.07 :       0.04 :       0.11 :       0.11 *
- *  . check syntax          :       0.03 :       0.00 :       0.03 :       0.03 *
- *  . fortran               :       0.75 :       0.24 :       0.99 :       0.99 *
+ * POST_RELEVE_T            :       0.38 :       0.17 :       0.55 :       0.55 *
+ * FIN                      :       0.07 :       0.05 :       0.12 :       0.11 *
+ *  . check syntax          :       0.03 :       0.00 :       0.03 :       0.05 *
+ *  . fortran               :       0.64 :       0.26 :       0.90 :       0.88 *
  ********************************************************************************
- * TOTAL_JOB                :       2.01 :       0.43 :       2.44 :       2.29 *
+ * TOTAL_JOB                :       1.89 :       0.40 :       2.29 :       2.05 *
  ********************************************************************************
 
-Statistics: user+syst:        0.07s (syst:        0.04s, elaps:        0.11s)
+Statistics: user+syst:        0.07s (syst:        0.05s, elaps:        0.11s)
 ----------------------------------------------------------------------------------------------------
-EXECUTION_CODE_ASTER_EXIT_18344=0
+EXECUTION_CODE_ASTER_EXIT_18794=0
